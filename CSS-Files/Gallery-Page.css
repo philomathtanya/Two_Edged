@@ -1,0 +1,77 @@
+body {
+    overflow-x: hidden;
+    background-color:#9A616D ;
+
+}
+#feed{
+width: 80px;
+height: 38px;
+border: 1px black solid;
+background-color: white;
+border-radius: 5px;
+margin-left: 10px;
+}
+/* .col-md-4{
+    /* border: 5px black solid; */
+    /* background-color: #7b6aa7; */
+/* border-radius: 5px; */
+/* } */
+
+#feed:hover{
+    background-color: rgba(0, 0, 0, 0.91);
+    color: white;
+}
+#latest:hover{
+color: black;
+}
+img:hover {
+    transform: scale(1.01);
+}
+#imageViewLink{
+    background-color: #7b6aa7;
+    border: #7b6aa7;
+}
+.navbar{
+    background-color: #7b6aa7;
+    
+}
+
+#brand img{
+    
+    width:120px;
+    height: 50px;
+}
+#next{
+    height:30px;
+  width:50px;
+  border: 2px solid #7b6aa7;
+  cursor: pointer;
+  margin: 10px;
+  position:relative;
+  left:50%;
+  right:20%;
+  bottom:5%;
+  top:60%;
+  text-transform: capitalize;
+}
+#add{
+    width: 30px;
+    margin-left: 100px;
+    border-radius: 10px;
+    border: 1px solid aliceblue;
+    text-decoration: none;
+    font-size: large;
+    cursor: pointer;
+    border:solid 2px #7b6aa7;
+}
+#profile{
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    border-radius: 50px;
+    border: 1px solid aliceblue;
+    cursor: pointer;
+    
+    border:solid 2px #7b6aa7;
+}
+

@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@500&display=swap');
+
+#box{
+    /* filter: blur(10px); */
+    width: 80%;
+    height: 70vh;
+    /* height: 40%; */
+    background-color:white;
+    border-radius: 15px;
+    /* padding-left: 10%; */
+    display: flex;
+    text-align: center;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 10px 10px 10px 5px;
+    
+}
+input{
+    margin-top: 10px;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px rgba(0, 0, 0, 0.623) solid;
+    /* border-left: 0px; */
+    padding-left: 20px;
+    text-decoration: none;
+
+    /* margin-bottom: 10px; */
+    
+}
+
+.inputs{
+    width: 50%;
+    border-right: 2px rgba(0, 0, 0, 0.807) solid;
+    /* padding-left: 10px; */
+}
+.inputs p{
+    font-weight: bold;
+    /* text-align: start; */
+   
+
+}
+.top{
+    width: 50%;
+    height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+#display_image{
+    cursor: pointer;
+    width: 50%;
+    height: 60%;
+    /* margin-left: 200px; */
+    border: 1px black solid;
+    border-radius: 50%;
+    /* width: 100%; */
+    /* height: 40%; */
+    background-color: white;
+    /* margin-bottom: 20px; */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png");
+    /* background-image: url("../Images/LOGO.png"); */
+    /* background-image: url(../Images/My\ Red.jpg); */
+    background-size: cover;
+    box-shadow: 10px 10px 20px;
+
+}
+#display_image:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+    /* transition: ease-in-out; */
+}
+
+#showerr{
+    margin-top: 2%;
+    color:red;
+    /* background */
+    /* background-color: black; */
+    /* padding: px;
+    width:80%;
+    /* align-items: center; */
+    /* text-align: center; */ 
+
+}
+.main{
+    width: 100%;
+    height: 100vh;
+ 
+    display: flex;
+ flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9A616D;
+    /* filter: blur0px); */
+}
+input [type=file]{
+    margin-left: 200px;
+    color: blue;
+    width:200px;
+    height: 200px;
+    display: none;
+
+}
+label{
+    border: 1px black solid;
+    padding: 5px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#popup_avtar{
+    width: 60%;
+    height: 60%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 2%;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    box-shadow: 10px 15px 30px 1px;
+    /* justify-content: space-evenly; */
+}
+.avtar{
+
+    cursor: pointer;
+    width: 20%;
+    height: 30%;
+    border-radius: 5px;
+    
+}
+.app{
+    width: 85%;
+    margin-bottom: 0.5%;
+    height: 10%;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+   
+
+    /* background-image: url();
+    background-position:center;
+    background-size: cover; */
+
+}
+.app:hover{
+    transform: scale(1.02);
+    background-color: antiquewhite;
+}
+.but{
+    margin-top: 2%;
+    width: 40%;
+    height: 100%;
+ 
+}
+#choose{
+    width: 65%;
+    height: 80%;
+}
+.avtar:hover{
+    transform: scale(1.05);
+    opacity: 70%;
+}
+#matter{
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
+    padding-bottom: 20%;
+}
+#popup_avtar {
+    transition: ease-out 0.4s;
+}
+#submitdata{
+    width: 80%;
+    height: 10%;
+    margin-top: 3%;
+    background-color: rgba(137, 43, 226, 0.894);
+
+    font-size: large;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    /* box-shadow: 10px 10px 10px; */
+
+}
+#submitdata:hover{
+    background-color: rgba(137, 43, 226, 0.662);
+    transform: scale(1.02);
+    transition: 0.2s;
+    transition: ease-in-out;
+/* box-shadow: 10px 10px 10px ; */
+}
+input:hover{
+    background-color: rgba(128, 128, 128, 0.284);
+
+}

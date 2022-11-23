@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../CSS-Files/SignUp-Page.css">
+    <link rel="icon" href="../Images/LOGO-igg.png" type="image/icon type">
+
+</head>
+<body>
+    <div class="main">
+
+    <div id="box">
+       
+
+<div class="inputs">
+    <p style="margin-bottom: 5%;color: rgba(0, 0, 0, 0.805);font-size:300%;font-weight: bolder;font-family:Arial, Helvetica, sans-serif">Sign Up</p>
+
+ 
+ 
+        <input id="Name" type="text" placeholder=" Full Name">
+        <input id="email" type="email" placeholder="Email">
+       <!-- <input id="Num" type="number" placeholder="phone number"> -->
+        <input id="Pass1" type="password" placeholder="password">
+            <input id="Pass2" type="password" placeholder="Comfirm password">
+            <p style=" margin-top: 8%;font-size:15px;font-family:Arial, Helvetica, sans-serif;">Already have a account?<a href="../HTML-Files/Login.html">Log In</a></p>
+        <button id="submitdata" name="submitdata"  onclick="login()">Sign Up</button>
+                <h1 id="showerr"></h1>
+
+    </div>
+    <div class="top">
+        <div onclick="Open()" id="display_image">
+        </div>
+
+
+
+        <h2 style="font-family: Arial, Helvetica, sans-serif;color: rgba(0, 0, 0, 0.732);margin-top: 50px;">Choose Aavatar</h2> 
+        <!-- <input type="file" id="ii" accept="image/*" onchange="loadfile(event)" style="display:none;"> -->
+        <!-- <input id="Profile-pic"  onchange="loadfile(event)" type="file" accept="image/* > -->
+    <!-- <label for="ii"  >Upload</label> -->
+    <!-- <button onclick="Open()" id="open">Upload</button> -->
+    </div>
+
+    </div>
+    <div id="popup_avtar">
+        <div id="choose">
+        <button onclick="change(a1)" class="avtar" id="a1" style=" background-image:url(https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=360&t=st=1668701025~exp=1668701625~hmac=1cc1f83093f92ce9192b3f3ce95ad2474bad5db6ca2684266d899897af239af2);background-position:center;background-size: cover;"></button>
+        <button onclick="change(a2)" class="avtar" id="a2" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person-with-glasses_23-2149436191.jpg?w=360&t=st=1668701099~exp=1668701699~hmac=0c1df3139dd08f1fcccadf3b0e71181c724a8331ae0db38bc58e84899f2217f1);
+        background-position:center;
+        background-size: cover;"></button>
+        <button onclick="change(a3)" class="avtar" id="a3"   style=" background-image: url(https://img.freepik.com/free-psd/3d-illustration-person-with-pink-hair_23-2149436186.jpg?w=360&t=st=1668700993~exp=1668701593~hmac=0422f50976b99bd7267d05b6776dfad3d11c60964b55edd3c6b461dd730a2011);
+        background-position:center;
+        background-size: cover;"></button>
+        <button onclick="change(a4) " class="avtar" id="a4" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436200.jpg?w=360&t=st=1668700785~exp=1668701385~hmac=b4456f7b37870bf67137cac74e18b367e206d38276e51b5ce5d86678008611e5);
+        background-position:center;
+        background-size: cover;"></button>
+        <button onclick="change(a5)" class="avtar" id="a5" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses-green-hair_23-2149436201.jpg?w=360&t=st=1668665074~exp=1668665674~hmac=0c0c804700d2221b4ea7686e80a8ccb5108588e82df08f075e181524d45abd26);
+        background-position:center;
+        background-size: cover;"></button>
+        <button onclick="change(a6)" class="avtar" id="a6" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person-tank-top_23-2149436202.jpg?w=360&t=st=1668665094~exp=1668665694~hmac=03dabebc26c30c793dbf4a20106ad0483093a6379ec44fa8a0897f1f1b797c81);
+        background-position:center;
+        background-size: cover;"></button>
+        <button onclick="change(a7)" class="avtar" id="a7" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person_23-2149436192.jpg?w=360&t=st=1668665104~exp=1668665704~hmac=28fd440d39b79528263f8783320223f2702b265ad11808b2172b248fb230ccb3);
+        background-position:center;
+        background-size: cover;"></button>
+        <button onclick="change(a8)" class="avtar" id="a8" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436180.jpg?w=360&t=st=1668663934~exp=1668664534~hmac=efc28335c5c138feb5d6bdaa8de2437bb4ba04b9c792251ba8f1d898b343edbe);
+        background-position:center;
+        background-size: cover;"></button>
+        <button onclick="change(a9)" class="avtar" id="a9" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person_23-2149436182.jpg?w=360&t=st=1668665250~exp=1668665850~hmac=aaa602dae3725bcd26c6fdf3b6b28c601f5a3bd42ee50b8c4098d02b4f9554d6);
+        background-position:center;
+        background-size: cover;"></button>
+        <button onclick="change(a10)" class="avtar" id="a10" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person-with-glasses_23-2149436189.jpg?w=360&t=st=1668699639~exp=1668700239~hmac=f7a3d01b5fd4d87b4188ac87a907b962e6f1ab638bd6143035775fa41a0680ae);
+        background-position:center;
+        background-size: cover;"></button>
+        <button onclick="change(a11)" class="avtar" id="a11" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person_23-2149436179.jpg?w=360&t=st=1668665269~exp=1668665869~hmac=1c81c5c314b3a464ecf3b999418c526ca3832050aec035dd8959a3b2ba91078f);
+        background-position:center;
+        background-size: cover;"></button>
+        <button onclick="change(a12)" class="avtar" id="a12" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person-with-rainbow-sunglasses_23-2149436196.jpg?w=360&t=st=1668665294~exp=1668665894~hmac=82d6d6cfaee1f0f8c7550f6589347ff5bc578419d2af92406902a90f615dece2);
+        background-position:center;
+        background-size: cover;"></button>
+         <button onclick="change(a13)" class="avtar" id="a13" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person-with-glasses-half-shaved-head_23-2149436187.jpg?w=360&t=st=1668700468~exp=1668701068~hmac=b15d99edcdaa0af71dcfb1419697252447915bfa692a58ddb668df0fc9b24be1);
+         background-position:center;
+         background-size: cover;"></button>
+            <button onclick="change(a14)" class="avtar" id="a14" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person-with-glasses_23-2149436185.jpg?w=360&t=st=1668699984~exp=1668700584~hmac=3c9e184dfe4987679902182daf85c785025d9d308dc6cd557d998d216ba1533d);
+            background-position:center;
+            background-size: cover;"></button>
+               <button onclick="change(a15)" class="avtar" id="a15" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436178.jpg?w=360&t=st=1668699906~exp=1668700506~hmac=e859b3b763322f262b629924a1f6ab8fb64c7485846aea2ef31f44426f3c18a2);
+               background-position:center;
+               background-size: cover;"></button>
+                  <button onclick="change(a16)" class="avtar" id="a16" style="background-image: url(https://img.freepik.com/free-psd/3d-illustration-person-tank-top_23-2149436199.jpg?w=360&t=st=1668700339~exp=1668700939~hmac=c3113a39e167dc97c5d6e57870ee057037cf1891db3baddd60391af8529687de);
+                  background-position:center;
+                  background-size: cover;"></button>
+ </div>
+        <div class="but">
+            <div id="matter">
+                <h1 style="color:white;">Choose Avatar</h1>
+            </div>
+<button class="app" onclick="Apply()" id="b1">Apply</button>
+<button class="app" onclick="Close()" id="b2">Close</button>
+</div>
+
+    </div>
+   
+</div>
+  <!-- -------------------------------------------------------<Script>---------------------------------------------------------------------- -->
+  <script type="module" src="../JS-Files/SignUp-Page.js"></script>
+  <script>
+    var link="";
+    
+    function change(a) {
+        // alert("clicked");
+        a.style.opacity='50%' 
+        if(a==a1){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=360&t=st=1668701025~exp=1668701625~hmac=1cc1f83093f92ce9192b3f3ce95ad2474bad5db6ca2684266d899897af239af2";
+        // alert(link);
+        }else
+        if(a==a2){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-with-glasses_23-2149436191.jpg?w=360&t=st=1668701099~exp=1668701699~hmac=0c1df3139dd08f1fcccadf3b0e71181c724a8331ae0db38bc58e84899f2217f1";
+        }
+        else
+        if(a==a3){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-with-pink-hair_23-2149436186.jpg?w=360&t=st=1668700993~exp=1668701593~hmac=0422f50976b99bd7267d05b6776dfad3d11c60964b55edd3c6b461dd730a2011";
+        }
+        else
+        if(a==a4){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436200.jpg?w=360&t=st=1668700785~exp=1668701385~hmac=b4456f7b37870bf67137cac74e18b367e206d38276e51b5ce5d86678008611e5";
+        }
+        else
+        if(a==a5){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses-green-hair_23-2149436201.jpg?w=360&t=st=1668665074~exp=1668665674~hmac=0c0c804700d2221b4ea7686e80a8ccb5108588e82df08f075e181524d45abd26";
+        }
+        else
+        if(a==a6){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-tank-top_23-2149436202.jpg?w=360&t=st=1668665094~exp=1668665694~hmac=03dabebc26c30c793dbf4a20106ad0483093a6379ec44fa8a0897f1f1b797c81";
+        }
+        else
+        if(a==a7){
+            link="https://img.freepik.com/free-psd/3d-illustration-person_23-2149436192.jpg?w=360&t=st=1668665104~exp=1668665704~hmac=28fd440d39b79528263f8783320223f2702b265ad11808b2172b248fb230ccb3";
+        }
+        else
+        if(a==a8){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436180.jpg?w=360&t=st=1668663934~exp=1668664534~hmac=efc28335c5c138feb5d6bdaa8de2437bb4ba04b9c792251ba8f1d898b343edbe";
+        }
+        else
+        if(a==a9){
+            link="https://img.freepik.com/free-psd/3d-illustration-person_23-2149436182.jpg?w=360&t=st=1668665250~exp=1668665850~hmac=aaa602dae3725bcd26c6fdf3b6b28c601f5a3bd42ee50b8c4098d02b4f9554d6";
+        }
+        else
+        if(a==a10){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-with-glasses_23-2149436189.jpg?w=360&t=st=1668699639~exp=1668700239~hmac=f7a3d01b5fd4d87b4188ac87a907b962e6f1ab638bd6143035775fa41a0680ae";
+        }
+        else
+        if(a==a11){
+            link="https://img.freepik.com/free-psd/3d-illustration-person_23-2149436179.jpg?w=360&t=st=1668665269~exp=1668665869~hmac=1c81c5c314b3a464ecf3b999418c526ca3832050aec035dd8959a3b2ba91078f";
+        }
+        else
+        if(a==a12){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-with-rainbow-sunglasses_23-2149436196.jpg?w=360&t=st=1668665294~exp=1668665894~hmac=82d6d6cfaee1f0f8c7550f6589347ff5bc578419d2af92406902a90f615dece2";
+        }
+        else
+        if(a==a13){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-with-glasses-half-shaved-head_23-2149436187.jpg?w=360&t=st=1668700468~exp=1668701068~hmac=b15d99edcdaa0af71dcfb1419697252447915bfa692a58ddb668df0fc9b24be1";
+        }
+        else
+        if(a==a14){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-with-glasses_23-2149436185.jpg?w=360&t=st=1668699984~exp=1668700584~hmac=3c9e184dfe4987679902182daf85c785025d9d308dc6cd557d998d216ba1533d";
+        }
+        else
+        if(a==a15){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436178.jpg?w=360&t=st=1668699906~exp=1668700506~hmac=e859b3b763322f262b629924a1f6ab8fb64c7485846aea2ef31f44426f3c18a2";
+        }
+        else
+        if(a==a16){
+            link="https://img.freepik.com/free-psd/3d-illustration-person-tank-top_23-2149436199.jpg?w=360&t=st=1668700339~exp=1668700939~hmac=c3113a39e167dc97c5d6e57870ee057037cf1891db3baddd60391af8529687de";
+        }
+   // a1.style.cssText='opacity:50%';
+    }
+    function Open(){
+        // alert("click o ho rah hai");
+        popup_avtar.style.zIndex='1';
+    popup_avtar.style.opacity='100';
+    box.style.filter="blur(10px)";
+    display_image.style.transitionDelay='2s';
+    }
+function Apply(){
+    popup_avtar.style.zIndex='-1';
+    popup_avtar.style.opacity='0';
+    display_image.style.backgroundImage="url("+link+")";
+    // display_image.style.backgroundImage=url("https://img.freepik.com/free-psd/3d-illustration-person-tank-top_23-2149436199.jpg?w=360&t=st=1668700339~exp=1668700939~hmac=c3113a39e167dc97c5d6e57870ee057037cf1891db3baddd60391af8529687de");
+    box.style.filter="blur(0px)";
+
+
+}
+function Close(){
+    // document.getElementById('b1').onclick()
+    popup_avtar.style.zIndex='-1';
+    popup_avtar.style.opacity='0';
+    box.style.filter="blur(0px)";
+
+
+}
+  </script>
+
+  <!-- ---------------------------------------------------------------------------------- -->
+  <script>
+  
+  
+  var imgbox = document.getElementById("display_image");
+    var loadfile = function (event) {
+        imgbox.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0])+")";
+    }</script>
+    <script src="https://kit.fontawesome.com/5a010fa73c.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+ 

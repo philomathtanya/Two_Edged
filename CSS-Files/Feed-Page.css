@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+body{
+    width: 100%;
+}
+#post{
+    display: flex;
+    justify-content: center;
+    padding-left:28%;
+    flex-direction: column;
+    padding-top: 3%;
+    font-size:80%;
+    font-family: 'Dancing Script', cursive ;
+    font-weight: lighter;
+    
+
+    /* width:100%; */
+    height: auto;
+    /* background-image: gra; */
+    background: rgb(253,253,253);
+background: linear-gradient(0deg, rgba(253,253,253,1) 0%, rgba(195,161,168,1) 37%, rgba(154,97,109,1) 100%);
+    justify-content: center;
+/* border-radius: ; */
+
+
+  
+}
+#full-matter{
+    width: 100%;
+    height: 80vh;
+}
+.boxes{
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px;
+    /* width: 50px; */
+    width:50%; height:250px; 
+}
+#second-div{
+    width: 100%;
+    height: 20vh;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size; */
+    font-weight: bolder;
+    /* padding-left: 10%; */
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    /* background-image: url(../Images/triangle\ 2.png);
+    background-position: center;
+    background-size: cover; */
+
+}
+.boxes:hover{
+    /* opacity: 100%; */
+    transform: scale(1.008);
+    border-bottom: 1px white solid;
+    border-right: 1px white solid;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#nav{
+    width: 95.5%;
+    height: 10vh;
+    display: flex;
+    /* justify-content */
+    padding-left: 4%;     
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;                                                              
+    /* border: 2px black solid; */
+    align-items: center;
+}
+/* #nav  */
+#nav img{
+    width: 10%;
+}
+#nav-matter{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 60%;
+    scroll-behavior:unset;
+}
+#nav-matter a{
+    text-decoration: none;
+}
+#nav a button {
+    /* align-items:; */
+    height: 40px;
+    width: 100px;
+    padding: 1%;
+    border-radius: 5px;
+    border: 1px black solid;
+    background-color: white;
+    font-weight: bolder;
+}
+.items{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+color: rgba(0, 0, 0, 0.885);
+
+}
+.items:hover{
+    color: rgb(104, 103, 103);
+}
+#nav button:hover{
+    
+    background-color: rgba(0, 0, 0, 0.823);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}

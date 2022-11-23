@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <!-- <link rel="stylesheet" href="../CSS-Files/tanya.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5a010fa73c.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        </style>
+</head>
+<link rel="stylesheet" href="../CSS-Files/Create-Post.css">
+<link rel="icon" href="../Images/LOGO-igg.png" type="image/icon type">
+
+<body>
+<div class="navi">
+  
+        <img class="logo" src="../Images/LOGO.png" alt="" width="" >
+  
+   <div class="navl">
+
+   <a href="../index.html">Home</a>  
+  
+   <a  href="../HTML-Files/Feed-Page.html">Feed</a>
+   <a href="../HTML-Files/Gallery-Page.html">Gallery</a>
+   <!-- <a href="">     </a> -->
+     
+ </div>
+   
+   <div onclick="logout()" style="cursor:pointer" class="profile"> 
+
+    </div> 
+
+</div>
+
+<div class="whole">
+  
+      
+   <div id="back">
+    <div class="mix">
+         <div class="one">
+            <span >Explore here..
+                <i class="fa-solid fa-heart"></i>
+            </span>
+            <textarea id="w1" name="w1" placeholder="Write Something..."></textarea>
+            <div class="post" id="cli">
+                <a href="">POST</a>                     
+                </div>
+                <h5 id="alert"></h5>
+         </div>
+          <div class="two">
+            <h4 style="margin-bottom:10px">Choose Background</h4>
+           
+            <a class="chooseimg" id="p1"> <img src="https://images.unsplash.com/photo-1532767153582-b1a0e5145009?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YWVzdGhldGljJTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a>
+            <a class="chooseimg" id="p2"><img src="https://images.unsplash.com/photo-1614944467560-36bfe1902b75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGJsdXIlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+             <a class="chooseimg"  id="p3"><img src="https://images.unsplash.com/photo-1614101595484-712913c033b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YWVzdGhldGljJTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+             <a  class="chooseimg" id="p4"><img src="https://images.unsplash.com/photo-1668189224454-9cce8038cfeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt=""></a> 
+             <a  class="chooseimg" id="p5"><img src="https://images.unsplash.com/photo-1482517967863-00e15c9b44be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ciUyMGFlc3RoZXRpYyUyMGJhY2tncm91bmRzJTIwZGFya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+             <a  class="chooseimg" id="p6"><img src="https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJsdXIlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+             <a  class="chooseimg" id="p7"><img src="https://images.unsplash.com/photo-1615468992004-112af4ba390e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGJsdXIlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+             <a  class="chooseimg" id="p8"><img src="https://images.unsplash.com/photo-1519624998-95e6a0186cd0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGJsdXIlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+             <a  class="chooseimg" id="p9"><img src="https://images.unsplash.com/photo-1611395565710-f7981ee9a073?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGJsdXIlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+           </div>
+    </div>
+</div>
+
+<div id="about"></div>
+</div>
+    <!-- <div class="images">
+       
+        <div class="choose">
+       <a id="p1"> <img src="https://images.unsplash.com/photo-1532767153582-b1a0e5145009?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YWVzdGhldGljJTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a>
+       <a id="p2"><img src="https://images.unsplash.com/photo-1614944467560-36bfe1902b75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGJsdXIlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+        <a id="p3"><img src="https://images.unsplash.com/photo-1614101595484-712913c033b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YWVzdGhldGljJTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+        <a id="p4"><img src="https://images.unsplash.com/photo-1668189224454-9cce8038cfeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt=""></a> 
+        <a id="p5"><img src="https://images.unsplash.com/photo-1482517967863-00e15c9b44be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ciUyMGFlc3RoZXRpYyUyMGJhY2tncm91bmRzJTIwZGFya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+        <a id="p6"><img src="https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJsdXIlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+        <a id="p7"><img src="https://images.unsplash.com/photo-1615468992004-112af4ba390e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGJsdXIlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+        <a id="p8"><img src="https://images.unsplash.com/photo-1519624998-95e6a0186cd0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGJsdXIlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+        <a id="p9"><img src="https://images.unsplash.com/photo-1611395565710-f7981ee9a073?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGJsdXIlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></a> 
+    </div>
+    Enter the Quotes:
+    <input id="in" type="text" maxlength="200" >
+    <a href="../HTML-Files/tanya2.html">view our posts</a>
+</div> -->
+
+<script type="module" src="../JS-Files/Config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script type="module" src="../JS-Files/Create-Post.js"></script>
+    <script>
+        function logout(){
+            window.open("../index.html","_self");
+        }
+    </script>
+</body>
+</html>

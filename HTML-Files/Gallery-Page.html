@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS-Files/Gallery-Page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="https://fonts.googleapis.com/css2?family=Roboto: wght@308;400;500;700&display=swap" href="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+    <link rel="icon" href="../Images/LOGO-igg.png" type="image/icon type">
+<link rel="stylesheet" href="../CSS-Files/About.css">
+    <title>Gallery</title>
+    
+  </head>
+  <body>
+
+    <div class="container-fluid p-0 m-0">
+        
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../HTML-Files/Home_page.html" id="brand"><img src="../Images/LOGO.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <select class="form-select border-0" id="orderby" onchange="orderBy(this)">
+                    <option selected value="latest" id="latest">Latest</option>
+                    <option value="oldest">Oldest</option>
+                    <option value="popular">Popular</option>
+                  </select>
+                  <a href="../HTML-Files/Feed-Page.html"><button id="feed">Feed</button></a>
+
+                </ul>
+                                <!-- <a href=""><button id="feed">Feed</button></a> -->
+
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search your interset" id="search">
+                  <button class="btn btn-outline-dark" type="button" id="searchbtn">Search</button>
+                </form>
+               <a href="../index.html"> <div id="profile"></div></a>
+              </div>
+            </div>
+          </nav>
+
+        <!-- search text -->    
+        <div class="text-dark m-3 text-muted">
+          <!-- <h3 style="color: white" id="searchQuery">Results-</h3> -->
+            <h3 style="color: white" id="searchQuery">Results-</h3>
+        </div>
+
+        <!-- images -->
+        <div class="row ps-3 pe-3">
+            <div class="col-md-4" id="col-1"></div>
+            <div class="col-md-4" id="col-2"></div>
+            <div class="col-md-4" id="col-3"></div>
+        </div>
+        <ul class="uk-pagination" data-uk-pagination="{items:100, itemsOnPage:30}" id="pagination"></ul>
+        <!-- error div -->
+        <div class="m-5 text-center" id="errorGrid">
+            
+
+        </div>
+       
+        <!-- modal -->
+        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Two-Edged Pictures</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center" id="modalBody" ></div>
+                <div class="modal-footer">
+                <a type="button" href ="" target="_blank" class="btn btn-success" id="imageViewLink">View</a>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="about">
+      <div id="data">
+          <h1 id="ph">About us</h1>
+        <div id="para">
+          TWO_EDGED project is having Two sides , at one edge 
+          edged has over a million free high-resolution pictures. All 
+          photos here are free to download . 
+          At another edge, You can post your own thoughts in a feed 
+          where this feed is visible to other users .
+          
+      </div>
+        
+      </div>
+      
+      <span style="padding-left: 150px; color:White ;"><h1 style="font-size: 420%; margin-top: 20px;">Contact us</h1>
+      <br>
+        <h4 >We'd love to hear from you</h4>
+      We are always available to address the needs of our users.
+          <div class="icon">
+            <img class="i" src="../Images/Call.png" alt="">
+            : &nbsp;090270 68068
+          </div>
+          <div class="icon">
+            <img class="i" src="../Images/Loaction.png" alt="">
+            : &nbsp; GLA UNIVERSITY, NH-2, Mathura-Delhi Road Mathura,Chaumuhan, Uttar Pradesh 281406
+          </div>
+          <div class="icon">
+            <img class="i" src="../Images/Gmail.png" alt="">
+            : &nbsp; tanya.bansal_cs20@gla.ac.in <br>ritesh.verma_cs20@gla.ac.in  <br> surbhi.bhardwaj_cs20@gla.ac.in
+          </div>
+    </span>
+  </div> 
+
+
+    <script  src="../JS-Files/login.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../JS-Files/Gallery-Page.js"></script>
+</body>
+</html>
