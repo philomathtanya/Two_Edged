@@ -86,7 +86,7 @@ const femail= email.substring(0, email.indexOf('@'));
                         // Data saved successfully!
                       // alert('Login Done');
                       // document.getElementById("alert").innerText = "Successfully Loged In";
-                      gett()
+//                       gett()
 
                       window.open("Gallery-Page.html","_self");
 
