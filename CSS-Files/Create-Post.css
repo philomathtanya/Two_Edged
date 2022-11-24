@@ -36,7 +36,14 @@ color: grey;
     /* background-image: url(../Images/choose.jpeg); */
     background-position: center;
     background-size: cover;
-    border: 1px black solid;
+  border:solid 2px black;
+    background-image: url(https://png.pngtree.com/png-vector/20190425/ourmid/pngtree-vector-logout-icon-png-image_991952.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.profile:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
 }
 /* .chooseimg{
     width: 10px; 
