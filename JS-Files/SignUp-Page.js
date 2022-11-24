@@ -42,7 +42,7 @@ submitdata.addEventListener('click', (e) => {
         return;
     }
     if (link == "") {
-        document.getElementById("showerr").innerText = "Select Aavatar";
+        document.getElementById("showerr").innerText = "Select Avatar";
         return;
     }
      if (!regex_pattern.test(email)) {
