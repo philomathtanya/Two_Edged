@@ -35,6 +35,8 @@ submitdata.addEventListener('click', (e) => {
     var password = document.getElementById('Pass1').value; 
     // var p1=document.getElementById('Pass1').value;
     var p2 = document.getElementById('Pass2').value;
+         const regex_pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
     if (uname == "" || email == "" || password == "" || p2 == "") {
         document.getElementById("showerr").innerText = "Empty Fields!";
         return;
@@ -43,7 +45,11 @@ submitdata.addEventListener('click', (e) => {
         document.getElementById("showerr").innerText = "Select Aavatar";
         return;
     }
-    
+     if (!regex_pattern.test(email)) {
+
+        document.getElementById("showerr").innerText = "Invalid Email";
+        return;
+        } 
     if (password == p2) {
 
         createUserWithEmailAndPassword(auth, email, password)
