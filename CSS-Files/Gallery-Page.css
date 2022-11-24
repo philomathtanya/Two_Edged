@@ -72,6 +72,13 @@ img:hover {
     border: 1px solid aliceblue;
     cursor: pointer;
     
-    border:solid 2px #7b6aa7;
+    border:solid 2px black;
+    background-image: url(https://png.pngtree.com/png-vector/20190425/ourmid/pngtree-vector-logout-icon-png-image_991952.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#profile:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
 }
 
