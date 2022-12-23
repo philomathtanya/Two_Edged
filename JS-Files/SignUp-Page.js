@@ -77,7 +77,7 @@ submitdata.addEventListener('click', (e) => {
                         // The write failed...
                         alert(error.message);
                         // window.open("Login.html");
-                        document.getElementById('showerr').innerText="Error Cheak Again";
+                        document.getElementById('showerr').innerText="Error Check Again";
                         console.log(error);
                         // window.open('Login.html');
 
@@ -95,7 +95,7 @@ submitdata.addEventListener('click', (e) => {
     }
     else {
         // alert("Password does'nt Match");
-        document.getElementById("showerr").innerText = "Password not match";
+        document.getElementById("showerr").innerText = "Password dosen't match";
     }
     // ---------------------------------------------------------------------------------------------------------------------------------------
     // document.getElementById('a1').onclick(change())
