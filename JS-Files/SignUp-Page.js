@@ -42,7 +42,7 @@ submitdata.addEventListener('click', (e) => {
         return;
     }
     if (link == "") {
-        document.getElementById("showerr").innerText = "Select Avatar";
+        document.getElementById("showerr").innerText = "Select any Avatar";
         return;
     }
      if (!regex_pattern.test(email)) {
@@ -69,7 +69,7 @@ submitdata.addEventListener('click', (e) => {
                     .then(() => {
                         // Data saved successfully!
                         // alert('User Created');
-                        document.getElementById("showerr").innerText="Sucessfully Signed Up";
+                        document.getElementById("showerr").innerText="Sucessfully Signed Up!";
                         // window.open('Login.html');
 
                     })
@@ -77,7 +77,7 @@ submitdata.addEventListener('click', (e) => {
                         // The write failed...
                         alert(error.message);
                         // window.open("Login.html");
-                        document.getElementById('showerr').innerText="Error Check Again";
+                        document.getElementById('showerr').innerText="Error! Check Again";
                         console.log(error);
                         // window.open('Login.html');
 
